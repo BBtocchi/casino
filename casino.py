@@ -17,12 +17,18 @@ while continuer_partie == True:  #on crée une boucle
  if pari > 50:
     print("tu ne peux pas pariez sur plus grand que 50")
     continue
+ if pari<=0:
+     print("tu ne peux parier que  sur un nombre plus grand que 0")
+     continue
 
  mise =input("maintenant, misez la somme que vous voulez : ")
  mise = int(mise) #création d'une variable mise, le joueur va pouvoir miser la somme voulue
  if mise > cagnotte :
     print("tu ne peux pas miser plus que ce que tu n'as")
     continue
+ if mise<=0:
+     print("on ne peut pas miser 0 euro ou moins!")
+     continue
 
  lancer = randrange(50)#on lance une boule au hazard
  lancer = int(lancer)
