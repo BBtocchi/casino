@@ -53,8 +53,9 @@ while continuer_partie == True:  #on crée une boucle
         
  if cagnotte <= 0:
     print ("vous n'avez plus assez d'argent pour continuer, vous avez perdu.")
+    continuer_partie=false
     #si la cagnotte tombe a 0, la partie s'arrete
-    sys.exit(1)
+    
 
 
 
